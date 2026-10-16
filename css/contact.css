@@ -1,0 +1,247 @@
+/* ============================================
+   WORLD TRAVEL JUNCTIONS — CONTACT PAGE STYLES
+   File: css/contact.css
+============================================ */
+
+/* ── PAGE BANNER ──────────────────────────── */
+.wtj-page-banner {
+  position: relative;
+  background-color: var(--wtj-navy);
+  background-image: url('../media/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 70px 0;
+  text-align: center;
+}
+.wtj-page-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(2, 31, 89, 0.88) 0%, rgba(3, 90, 166, 0.75) 100%);
+}
+.wtj-page-banner-content {
+  position: relative;
+  z-index: 1;
+}
+.wtj-page-banner-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.wtj-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.wtj-breadcrumb a {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color var(--wtj-transition);
+}
+.wtj-breadcrumb a:hover { color: var(--wtj-yellow); }
+.wtj-breadcrumb i { font-size: 12px; }
+.wtj-breadcrumb span { color: var(--wtj-yellow); font-weight: 500; }
+
+/* ── CONTACT INFO CARDS ───────────────────── */
+.wtj-contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.wtj-contact-info-card {
+  background: var(--wtj-white);
+  border: 1px solid rgba(2, 31, 89, 0.08);
+  border-radius: var(--wtj-radius);
+  padding: 32px 24px;
+  text-align: center;
+  transition: all var(--wtj-transition);
+}
+.wtj-contact-info-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--wtj-orange);
+  box-shadow: 0 12px 28px rgba(2, 31, 89, 0.10);
+}
+
+.wtj-contact-info-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 18px;
+  background: rgba(3, 90, 166, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--wtj-transition);
+}
+.wtj-contact-info-card:hover .wtj-contact-info-icon {
+  background: var(--wtj-orange);
+}
+.wtj-contact-info-icon i {
+  font-size: 26px;
+  color: var(--wtj-blue);
+  transition: color var(--wtj-transition);
+}
+.wtj-contact-info-card:hover .wtj-contact-info-icon i {
+  color: #fff;
+}
+
+.wtj-contact-info-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--wtj-navy);
+  margin-bottom: 6px;
+}
+.wtj-contact-info-card p {
+  font-size: 12.5px;
+  color: #888;
+  margin-bottom: 10px;
+}
+.wtj-contact-info-card a {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--wtj-blue);
+  word-break: break-word;
+}
+.wtj-contact-info-card a:hover {
+  color: var(--wtj-orange);
+}
+
+/* ── CONTACT FORM + MAP GRID ──────────────── */
+.wtj-contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* ── FORM ─────────────────────────────────── */
+.wtj-contact-form {
+  margin-top: 28px;
+}
+
+.wtj-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.wtj-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.wtj-form-group label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--wtj-navy);
+}
+
+.wtj-form-group input,
+.wtj-form-group textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--wtj-text);
+  padding: 12px 16px;
+  border: 1.5px solid rgba(2, 31, 89, 0.12);
+  border-radius: 8px;
+  background: var(--wtj-white);
+  outline: none;
+  transition: border-color var(--wtj-transition);
+  resize: vertical;
+}
+.wtj-form-group input:focus,
+.wtj-form-group textarea:focus {
+  border-color: var(--wtj-blue);
+}
+.wtj-form-group input::placeholder,
+.wtj-form-group textarea::placeholder {
+  color: #aaa;
+}
+
+.wtj-form-submit {
+  width: 100%;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+/* ── MAP ──────────────────────────────────── */
+.wtj-contact-map-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.wtj-contact-map {
+  width: 100%;
+  height: 320px;
+  border: none;
+  border-radius: var(--wtj-radius);
+  box-shadow: 0 8px 24px rgba(2, 31, 89, 0.08);
+}
+
+.wtj-contact-hours {
+  background: var(--wtj-white);
+  border: 1px solid rgba(2, 31, 89, 0.08);
+  border-radius: var(--wtj-radius);
+  padding: 28px;
+}
+.wtj-contact-hours h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--wtj-navy);
+  margin-bottom: 18px;
+}
+.wtj-contact-hours h3 i {
+  color: var(--wtj-orange);
+  font-size: 18px;
+}
+.wtj-contact-hours ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13.5px;
+  color: #666;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(2, 31, 89, 0.06);
+}
+.wtj-contact-hours ul li:last-child { border-bottom: none; }
+.wtj-contact-hours ul li span:first-child {
+  font-weight: 500;
+  color: var(--wtj-navy);
+}
+
+/* ── RESPONSIVE ───────────────────────────── */
+@media (max-width: 960px) {
+  .wtj-contact-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .wtj-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wtj-page-banner { padding: 50px 0; }
+  .wtj-page-banner-content h1 { font-size: 28px; }
+  .wtj-contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+  .wtj-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .wtj-contact-map { height: 240px; }
+}

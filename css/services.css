@@ -1,0 +1,206 @@
+/* ============================================
+   WORLD TRAVEL JUNCTIONS — SERVICES PAGE STYLES
+   File: css/services.css
+   Prefix: wtj-
+   Note: Reuses existing tokens/components from
+   style.css (wtj-about-grid, wtj-about-heading,
+   wtj-about-text, wtj-package-highlights,
+   wtj-section-tag, wtj-why-grid/card, wtj-tab)
+   Only NEW components are defined below.
+============================================ */
+
+/* ============================================
+   PAGE HERO (reusable banner for inner pages —
+   About Us, Contact, Destinations can reuse this)
+============================================ */
+.wtj-page-hero {
+  position: relative;
+  background: linear-gradient(135deg, var(--wtj-navy) 0%, var(--wtj-blue) 100%);
+  padding: 56px 0 48px;
+  text-align: center;
+  overflow: hidden;
+}
+.wtj-page-hero::before,
+.wtj-page-hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.wtj-page-hero::before {
+  width: 280px;
+  height: 280px;
+  top: -140px;
+  left: -80px;
+  background: rgba(242, 116, 5, 0.12);
+}
+.wtj-page-hero::after {
+  width: 220px;
+  height: 220px;
+  bottom: -120px;
+  right: -60px;
+  background: rgba(242, 183, 5, 0.10);
+}
+.wtj-page-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.wtj-page-hero .wtj-hero-tag { margin-bottom: 18px; }
+.wtj-page-hero-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.wtj-page-hero-crumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.65);
+}
+.wtj-page-hero-crumb a { color: rgba(255, 255, 255, 0.85); }
+.wtj-page-hero-crumb a:hover { color: var(--wtj-yellow); }
+.wtj-page-hero-crumb i { font-size: 11px; }
+
+@media (max-width: 600px) {
+  .wtj-page-hero { padding: 44px 0 36px; }
+  .wtj-page-hero-heading { font-size: 27px; }
+}
+
+/* ============================================
+   SERVICE QUICK-JUMP SUBNAV (sticky pill bar)
+============================================ */
+.wtj-service-subnav {
+  position: sticky;
+  top: 72px;
+  z-index: 900;
+  background: var(--wtj-white);
+  border-bottom: 1px solid rgba(2, 31, 89, 0.08);
+  box-shadow: 0 2px 14px rgba(2, 31, 89, 0.05);
+}
+.wtj-service-subnav-inner {
+  max-width: var(--wtj-container);
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.wtj-service-subnav-inner::-webkit-scrollbar { display: none; }
+
+.wtj-service-subnav .wtj-tab {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+.wtj-service-subnav .wtj-tab i { font-size: 15px; }
+
+@media (max-width: 600px) {
+  .wtj-service-subnav-inner { padding: 12px 20px; }
+}
+
+/* ============================================
+   SERVICES OVERVIEW GRID (top index cards)
+============================================ */
+.wtj-service-index-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.wtj-service-index-grid a.wtj-why-card { cursor: pointer; }
+
+@media (max-width: 960px) {
+  .wtj-service-index-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .wtj-service-index-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+}
+
+/* ============================================
+   SERVICE DETAIL BLOCKS (zig-zag sections)
+   Reuses .wtj-about-grid / .wtj-about-heading /
+   .wtj-about-text / .wtj-package-highlights
+============================================ */
+.wtj-service-block {
+  scroll-margin-top: 156px; /* offset for sticky navbar (72px) + subnav */
+}
+
+/* Visual panel replaces the photographic .wtj-about-image
+   with an icon-driven gradient panel (no imagery required) */
+.wtj-service-visual {
+  position: relative;
+  height: 400px;
+  border-radius: var(--wtj-radius);
+  background: linear-gradient(135deg, var(--wtj-navy) 0%, var(--wtj-blue) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(2, 31, 89, 0.14);
+}
+.wtj-service-visual::before,
+.wtj-service-visual::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.wtj-service-visual::before {
+  width: 200px;
+  height: 200px;
+  top: -90px;
+  right: -60px;
+  background: rgba(242, 116, 5, 0.14);
+}
+.wtj-service-visual::after {
+  width: 160px;
+  height: 160px;
+  bottom: -80px;
+  left: -50px;
+  background: rgba(242, 183, 5, 0.10);
+}
+.wtj-service-visual i {
+  position: relative;
+  z-index: 1;
+  font-size: 130px;
+  color: rgba(255, 255, 255, 0.92);
+}
+.wtj-service-visual-label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.wtj-service-cta {
+  margin-top: 8px;
+}
+
+@media (max-width: 960px) {
+  .wtj-service-visual { height: 300px; }
+  .wtj-service-visual i { font-size: 100px; }
+}
+@media (max-width: 600px) {
+  .wtj-service-visual { height: 240px; }
+  .wtj-service-visual i { font-size: 80px; }
+}

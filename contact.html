@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Get in touch with World Travel Junctions, Nagpur. Call, WhatsApp, or visit us to plan your next trip." />
+  <title>Contact Us | World Travel Junctions</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+  <!-- ============================================
+       TOP BAR + NAVBAR (same as index.html)
+  ============================================ -->
+  <div class="wtj-topbar">
+    <div class="wtj-topbar-inner">
+      <div class="wtj-topbar-left">
+        <a href="tel:+919028523165" class="wtj-topbar-item">
+          <i class="ti ti-phone" aria-hidden="true"></i> +91 90285 23165
+        </a>
+        <a href="mailto:worldtraveljunctions@gmail.com" class="wtj-topbar-item wtj-hide-sm">
+          <i class="ti ti-mail" aria-hidden="true"></i> worldtraveljunctions@gmail.com
+        </a>
+        <span class="wtj-topbar-item wtj-hide-sm">
+          <i class="ti ti-map-pin" aria-hidden="true"></i> Nagpur, India
+        </span>
+      </div>
+      <div class="wtj-topbar-right">
+        <a href="#" class="wtj-social" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+        <a href="#" class="wtj-social" aria-label="Instagram"><i class="ti ti-brand-instagram"
+            aria-hidden="true"></i></a>
+        <a href="#" class="wtj-social" aria-label="YouTube"><i class="ti ti-brand-youtube" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="wtj-navbar" role="navigation" aria-label="Main navigation">
+    <div class="wtj-nav-inner">
+      <a href="index.html" class="wtj-logo" aria-label="World Travel Junctions Home">
+        <img src="media/logo.jpeg" alt="World Travel Junctions Logo" class="wtj-logo-img" />
+        <div class="wtj-logo-text">
+          <div class="wtj-logo-line1">
+            <span class="wtj-world">WORLD </span><span class="wtj-travel">TRAVEL</span>
+          </div>
+          <div class="wtj-logo-line2">JUNCTIONS</div>
+        </div>
+      </a>
+
+      <ul class="wtj-nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li class="wtj-dropdown">
+          <a href="#">Destinations <i class="ti ti-chevron-down" aria-hidden="true"></i></a>
+          <div class="wtj-dropdown-menu" role="menu">
+            <a href="destinations.html#international" role="menuitem"><i class="ti ti-world" aria-hidden="true"></i>
+              International Tours</a>
+            <a href="destinations.html#domestic" role="menuitem"><i class="ti ti-map" aria-hidden="true"></i> Domestic
+              Tours</a>
+            <a href="destinations.html#adventure" role="menuitem"><i class="ti ti-mountain" aria-hidden="true"></i>
+              Adventure Trips</a>
+            <a href="destinations.html#honeymoon" role="menuitem"><i class="ti ti-heart" aria-hidden="true"></i>
+              Honeymoon Packages</a>
+          </div>
+        </li>
+        <li class="wtj-dropdown">
+          <a href="#">Packages <i class="ti ti-chevron-down" aria-hidden="true"></i></a>
+          <div class="wtj-dropdown-menu" role="menu">
+            <a href="packages.html#group" role="menuitem"><i class="ti ti-users" aria-hidden="true"></i> Group Tours</a>
+            <a href="packages.html#family" role="menuitem"><i class="ti ti-home-heart" aria-hidden="true"></i> Family
+              Packages</a>
+            <a href="packages.html#budget" role="menuitem"><i class="ti ti-tag" aria-hidden="true"></i> Budget Tours</a>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="active-item"><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <div class="wtj-nav-cta">
+        <a href="tel:+919028523165" class="wtj-btn-call"><i class="ti ti-phone" aria-hidden="true"></i> Call Us</a>
+        <a href="https://wa.me/919028523165?text=Hi%2C%20I%27m%20interested%20in%20a%20tour%20package"
+          class="wtj-btn-whatsapp" target="_blank" rel="noopener">
+          <i class="ti ti-brand-whatsapp" aria-hidden="true"></i> WhatsApp
+        </a>
+      </div>
+
+      <button class="wtj-hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="wtjMobileMenu"
+        onclick="wtjToggleMenu(this)">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="wtj-mobile-menu" id="wtjMobileMenu" role="menu">
+      <ul class="wtj-mobile-links">
+        <li><a href="index.html">Home <i class="ti ti-arrow-right" aria-hidden="true"></i></a></li>
+        <li><a href="destinations.html">Destinations <i class="ti ti-arrow-right" aria-hidden="true"></i></a></li>
+        <li><a href="packages.html">Packages <i class="ti ti-arrow-right" aria-hidden="true"></i></a></li>
+        <li><a href="about.html">About Us <i class="ti ti-arrow-right" aria-hidden="true"></i></a></li>
+        <li><a href="contact.html">Contact <i class="ti ti-arrow-right" aria-hidden="true"></i></a></li>
+      </ul>
+      <div class="wtj-mobile-cta">
+        <a href="tel:+919028523165" class="wtj-mob-call"><i class="ti ti-phone" aria-hidden="true"></i> Call Us</a>
+        <a href="https://wa.me/919028523165?text=Hi%2C%20I%27m%20interested%20in%20a%20tour%20package"
+          class="wtj-mob-wa" target="_blank" rel="noopener"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+          WhatsApp</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ============================================
+       PAGE BANNER
+  ============================================ -->
+  <section class="wtj-page-banner">
+    <div class="wtj-page-banner-overlay"></div>
+    <div class="wtj-container wtj-page-banner-content">
+      <h1>Contact Us</h1>
+      <div class="wtj-breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="ti ti-chevron-right" aria-hidden="true"></i>
+        <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CONTACT INFO CARDS
+  ============================================ -->
+  <section class="wtj-section">
+    <div class="wtj-container">
+      <div class="wtj-contact-info-grid">
+
+        <div class="wtj-contact-info-card">
+          <div class="wtj-contact-info-icon"><i class="ti ti-phone" aria-hidden="true"></i></div>
+          <h3>Call Us</h3>
+          <p>Mon - Sat, 10 AM - 7 PM</p>
+          <a href="tel:+919028523165">+91 90285 23165</a>
+        </div>
+
+        <div class="wtj-contact-info-card">
+          <div class="wtj-contact-info-icon"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></div>
+          <h3>WhatsApp</h3>
+          <p>Quick replies, anytime</p>
+          <a href="https://wa.me/919028523165?text=Hi%2C%20I%27m%20interested%20in%20a%20tour%20package" target="_blank"
+            rel="noopener">Chat with Us</a>
+        </div>
+
+        <div class="wtj-contact-info-card">
+          <div class="wtj-contact-info-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
+          <h3>Email Us</h3>
+          <p>We reply within 24 hours</p>
+          <a href="mailto:worldtraveljunctions@gmail.com">worldtraveljunctions@gmail.com</a>
+        </div>
+
+        <div class="wtj-contact-info-card">
+          <div class="wtj-contact-info-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
+          <h3>Visit Us</h3>
+          <p>Building No. A1, near Union Bank of India, Govinda Gourkhede Complex, Seminary Hills, Nagpur, Maharashtra 440006</p>
+          <a href="https://maps.app.goo.gl/GWo1uedgp8ss8Rvm7" target="_blank" rel="noopener">Get
+            Directions</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CONTACT FORM + MAP
+  ============================================ -->
+  <section class="wtj-section wtj-section-alt">
+    <div class="wtj-container">
+      <div class="wtj-contact-grid">
+
+        <!-- FORM -->
+        <div class="wtj-contact-form-wrap">
+          <span class="wtj-section-tag"><i class="ti ti-send" aria-hidden="true"></i> Get In Touch</span>
+          <h2 class="wtj-about-heading">Send Us Your <span class="wtj-accent">Travel Enquiry</span></h2>
+          <p class="wtj-about-text">
+            Fill in your details below and hit send — we'll receive your enquiry
+            directly on WhatsApp and get back to you shortly.
+          </p>
+
+          <form class="wtj-contact-form" id="wtjContactForm">
+            <div class="wtj-form-row">
+              <div class="wtj-form-group">
+                <label for="wtjName">Full Name</label>
+                <input type="text" id="wtjName" name="name" placeholder="Your name" required />
+              </div>
+              <div class="wtj-form-group">
+                <label for="wtjPhone">Phone Number</label>
+                <input type="tel" id="wtjPhone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+            </div>
+
+            <div class="wtj-form-row">
+              <div class="wtj-form-group">
+                <label for="wtjEmail">Email Address</label>
+                <input type="email" id="wtjEmail" name="email" placeholder="you@example.com" />
+              </div>
+              <div class="wtj-form-group">
+                <label for="wtjDestinationContact">Destination of Interest</label>
+                <input type="text" id="wtjDestinationContact" name="destination" placeholder="e.g. Goa, Bali, Kerala" />
+              </div>
+            </div>
+
+            <div class="wtj-form-group">
+              <label for="wtjMessage">Message</label>
+              <textarea id="wtjMessage" name="message" rows="4" placeholder="Tell us about your travel plans..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="wtj-btn-primary wtj-form-submit">
+              <i class="ti ti-brand-whatsapp" aria-hidden="true"></i> Send via WhatsApp
+            </button>
+          </form>
+        </div>
+
+        <!-- MAP -->
+        <div class="wtj-contact-map-wrap">
+          <iframe class="wtj-contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.5690803111943!2d79.03828377508492!3d21.169540680515226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1c9685971ad%3A0x8a509aeb8b075f3c!2sWorld%20Travel%20Junctions!5e0!3m2!1sen!2sin!4v1785067570234!5m2!1sen!2sin"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="World Travel Junctions Location"></iframe>
+
+          <div class="wtj-contact-hours">
+            <h3><i class="ti ti-clock" aria-hidden="true"></i> Office Hours</h3>
+            <ul>
+              <li><span>Monday - Saturday</span><span>10:00 AM - 7:00 PM</span></li>
+              <li><span>Sunday</span><span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CTA BANNER (reused)
+  ============================================ -->
+  <section class="wtj-cta-banner" id="cta-banner">
+    <div class="wtj-container wtj-cta-inner">
+      <div class="wtj-cta-icon"><i class="ti ti-plane-departure" aria-hidden="true"></i></div>
+      <h2 class="wtj-cta-heading">Still Have Questions?</h2>
+      <p class="wtj-cta-subtext">
+        Our travel experts are just a message away — reach out and let's start
+        planning your perfect trip together.
+      </p>
+      <div class="wtj-cta-buttons">
+        <a href="https://wa.me/919028523165?text=Hi%2C%20I%27m%20interested%20in%20a%20tour%20package"
+          class="wtj-cta-btn wtj-cta-btn-whatsapp" target="_blank" rel="noopener">
+          <i class="ti ti-brand-whatsapp" aria-hidden="true"></i> WhatsApp Us
+        </a>
+        <a href="tel:+919028523165" class="wtj-cta-btn wtj-cta-btn-call">
+          <i class="ti ti-phone" aria-hidden="true"></i> Call Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FOOTER (same as index.html)
+  ============================================ -->
+  <footer class="wtj-footer" id="footer">
+    <div class="wtj-container">
+      <div class="wtj-footer-grid">
+
+        <div class="wtj-footer-col">
+          <a href="index.html" class="wtj-footer-logo">
+            <img src="media/logo.jpeg" alt="World Travel Junctions Logo" class="wtj-footer-logo-img" />
+            <div class="wtj-footer-logo-text">
+              <div class="wtj-footer-logo-line1">
+                <span class="wtj-world">WORLD </span><span class="wtj-travel">TRAVEL</span>
+              </div>
+              <div class="wtj-footer-logo-line2">JUNCTIONS</div>
+            </div>
+          </a>
+          <p class="wtj-footer-tagline">
+            Your trusted travel partner for unforgettable journeys —
+            from local getaways to dream destinations across the globe.
+          </p>
+          <div class="wtj-footer-social">
+            <a href="#" class="wtj-social" aria-label="Facebook"><i class="ti ti-brand-facebook"
+                aria-hidden="true"></i></a>
+            <a href="#" class="wtj-social" aria-label="Instagram"><i class="ti ti-brand-instagram"
+                aria-hidden="true"></i></a>
+            <a href="#" class="wtj-social" aria-label="YouTube"><i class="ti ti-brand-youtube"
+                aria-hidden="true"></i></a>
+            <a href="#" class="wtj-social" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"
+                aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="wtj-footer-col">
+          <h3 class="wtj-footer-heading">Quick Links</h3>
+          <ul class="wtj-footer-links">
+            <li><a href="index.html"><i class="ti ti-chevron-right" aria-hidden="true"></i> Home</a></li>
+            <li><a href="about.html"><i class="ti ti-chevron-right" aria-hidden="true"></i> About Us</a></li>
+            <li><a href="destinations.html"><i class="ti ti-chevron-right" aria-hidden="true"></i> Destinations</a></li>
+            <li><a href="packages.html"><i class="ti ti-chevron-right" aria-hidden="true"></i> Packages</a></li>
+            <li><a href="contact.html"><i class="ti ti-chevron-right" aria-hidden="true"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="wtj-footer-col">
+          <h3 class="wtj-footer-heading">Tour Categories</h3>
+          <ul class="wtj-footer-links">
+            <li><a href="destinations.html#international"><i class="ti ti-chevron-right" aria-hidden="true"></i>
+                International Tours</a></li>
+            <li><a href="destinations.html#domestic"><i class="ti ti-chevron-right" aria-hidden="true"></i> Domestic
+                Tours</a></li>
+            <li><a href="destinations.html#honeymoon"><i class="ti ti-chevron-right" aria-hidden="true"></i> Honeymoon
+                Packages</a></li>
+            <li><a href="destinations.html#adventure"><i class="ti ti-chevron-right" aria-hidden="true"></i> Adventure
+                Trips</a></li>
+            <li><a href="packages.html#group"><i class="ti ti-chevron-right" aria-hidden="true"></i> Group Tours</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="wtj-footer-col">
+          <h3 class="wtj-footer-heading">Get In Touch</h3>
+          <ul class="wtj-footer-contact">
+            <li><i class="ti ti-map-pin" aria-hidden="true"></i><span>Building No. A1, near Union Bank of India, Govinda Gourkhede Complex, Seminary Hills, Nagpur, Maharashtra 440006</span></li>
+            <li><i class="ti ti-phone" aria-hidden="true"></i><a href="tel:+919028523165">+91 90285 23165</a></li>
+            <li><i class="ti ti-mail" aria-hidden="true"></i><a
+                href="mailto:info@worldtraveljunctions.com">info@worldtraveljunctions.com</a></li>
+            <li><i class="ti ti-clock" aria-hidden="true"></i><span>Mon - Sat: 10:00 AM - 7:00 PM</span></li>
+          </ul>
+          <a href="https://wa.me/919876543210?text=Hi%2C%20I%27m%20interested%20in%20a%20tour%20package"
+            class="wtj-footer-wa-btn" target="_blank" rel="noopener">
+            <i class="ti ti-brand-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      <div class="wtj-footer-bottom">
+        <p>&copy; <span id="wtjYear"></span> World Travel Junctions. All Rights Reserved.</p>
+        <div class="wtj-footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span class="wtj-footer-divider">|</span>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+        <p class="wtj-footer-credit">Made with <i class="ti ti-heart" aria-hidden="true"></i> in Nagpur</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919028523165?text=Hi%2C%20I%27m%20interested%20in%20a%20tour%20package"
+    class="wtj-whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="js/header.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+
+</html>
