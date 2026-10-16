@@ -1,0 +1,122 @@
+<!-- ============================================
+    SECTION 1: TOP BAR + HEADER / NAVBAR
+    File: css/header.css | js/header.js
+    Status: COMPLETED ✅
+  ============================================ -->
+
+<div class="wtj-topbar">
+  <div class="wtj-topbar-inner">
+    <div class="wtj-topbar-left">
+      <a href="tel:+919028523165" class="wtj-topbar-item">
+        <i class="ti ti-phone" aria-hidden="true"></i>
+        +91 90285 23165
+      </a>
+      <a href="mailto:worldtraveljunctions@gmail.com" class="wtj-topbar-item wtj-hide-sm">
+        <i class="ti ti-mail" aria-hidden="true"></i>
+        worldtraveljunctions@gmail.com
+      </a>
+      <span class="wtj-topbar-item wtj-hide-sm">
+        <i class="ti ti-map-pin" aria-hidden="true"></i>
+        Nagpur, India
+      </span>
+    </div>
+    <div class="wtj-topbar-right">
+      <a href="#" class="wtj-social" aria-label="Facebook">
+        <i class="ti ti-brand-facebook" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="wtj-social" aria-label="Instagram">
+        <i class="ti ti-brand-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="wtj-social" aria-label="YouTube">
+        <i class="ti ti-brand-youtube" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<nav class="wtj-navbar" role="navigation" aria-label="Main navigation">
+  <div class="wtj-nav-inner">
+    <a href="index.html" class="wtj-logo" aria-label="World Travel Junctions Home">
+      <img src="media/logo.jpeg" alt="World Travel Junctions Logo" class="wtj-logo-img" />
+      <div class="wtj-logo-text">
+        <div class="wtj-logo-line1">
+          <span class="wtj-world">WORLD </span><span class="wtj-travel">TRAVEL</span>
+        </div>
+        <div class="wtj-logo-line2">JUNCTIONS</div>
+      </div>
+    </a>
+
+    <ul class="wtj-nav-links" role="list">
+      <li class="active-item"><a href="index.html" class="active">Home</a></li>
+      <li class="wtj-dropdown">
+        <a href="#">Destinations <i class="ti ti-chevron-down" aria-hidden="true"></i></a>
+        <div class="wtj-dropdown-menu" role="menu">
+          <a href="destinations.html#international" role="menuitem"><i class="ti ti-world" aria-hidden="true"></i>
+            International Tours</a>
+          <a href="destinations.html#domestic" role="menuitem"><i class="ti ti-map" aria-hidden="true"></i> Domestic
+            Tours</a>
+          <a href="destinations.html#adventure" role="menuitem"><i class="ti ti-mountain" aria-hidden="true"></i>
+            Adventure Trips</a>
+          <a href="destinations.html#honeymoon" role="menuitem"><i class="ti ti-heart" aria-hidden="true"></i> Honeymoon
+            Packages</a>
+        </div>
+      </li>
+      <li class="wtj-dropdown">
+        <a href="#">Packages <i class="ti ti-chevron-down" aria-hidden="true"></i></a>
+        <div class="wtj-dropdown-menu" role="menu">
+          <a href="packages.html#group" role="menuitem"><i class="ti ti-users" aria-hidden="true"></i> Group Tours</a>
+          <a href="packages.html#family" role="menuitem"><i class="ti ti-home-heart" aria-hidden="true"></i> Family
+            Packages</a>
+          <a href="packages.html#budget" role="menuitem"><i class="ti ti-tag" aria-hidden="true"></i> Budget Tours</a>
+        </div>
+      </li>
+
+      <li class="wtj-dropdown">
+        <a href="#">Services <i class="ti ti-chevron-down" aria-hidden="true"></i></a>
+        <div class="wtj-dropdown-menu" role="menu">
+          <a href="flight-tickets.html" role="menuitem"><i class="ti ti-users" aria-hidden="true"></i> Flight
+            Tickets</a>
+          <a href="visa-support.html" role="menuitem"><i class="ti ti-home-heart" aria-hidden="true"></i> Visa
+            Support</a>
+          <a href="passport-support.html;" role="menuitem"><i class="ti ti-tag" aria-hidden="true"></i> Passport
+            Support</a>
+          <a href="train-tickets.html" role="menuitem"><i class="ti ti-tag" aria-hidden="true"></i> Train Tickets</a>
+          <a href="cruise.html" role="menuitem"><i class="ti ti-tag" aria-hidden="true"></i> Cruise</a>
+        </div>
+      </li>
+
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="wtj-nav-cta">
+      <a href="tel:+919028523165" class="wtj-btn-call">
+        <i class="ti ti-phone" aria-hidden="true"></i> Call Us
+      </a>
+      <a href="https://wa.me/919028523165?text=Hi%2C%20I%27m%20interested%20in%20a%20tour%20package"
+        class="wtj-btn-whatsapp" target="_blank" rel="noopener">
+        <i class="ti ti-brand-whatsapp" aria-hidden="true"></i> WhatsApp
+      </a>
+    </div>
+
+    <button class="wtj-hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="wtjMobileMenu"
+      onclick="wtjToggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="wtj-mobile-menu" id="wtjMobileMenu" role="menu">
+    <ul class="wtj-mobile-links">
+      <li><a href="index.html">Home <i class="ti ti-arrow-right" aria-hidden="true"></i></a></li>
+      <li><a href="destinations.html">Destinations <i class="ti ti-arrow-right" aria-hidden="true"></i></a></li>
+      <li><a href="packages.html">Packages <i class="ti ti-arrow-right" aria-hidden="true"></i></a></li>
+      <li><a href="about.html">About Us <i class="ti ti-arrow-right" aria-hidden="true"></i></a></li>
+      <li><a href="contact.html">Contact <i class="ti ti-arrow-right" aria-hidden="true"></i></a></li>
+    </ul>
+    <div class="wtj-mobile-cta">
+      <a href="tel:+919028523165" class="wtj-mob-call"><i class="ti ti-phone" aria-hidden="true"></i> Call Us</a>
+      <a href="https://wa.me/919028523165?text=Hi%2C%20I%27m%20interested%20in%20a%20tour%20package" class="wtj-mob-wa"
+        target="_blank" rel="noopener"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+    </div>
+  </div>
+</nav>
